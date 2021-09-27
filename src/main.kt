@@ -1,11 +1,8 @@
 
-fun addSomeNumbers(x: Int, y: Int): Int{
-    return x+y
-}
 
-fun getSquareArea(): Int {
+fun getSquareArea(): Double {
     print("please enter measurements for a side of the square in ft \n")
-    var x = readLine()!!.toInt()
+    var x = readLine()!!.toDouble()
     var area = x*x
     return area
 
@@ -20,18 +17,18 @@ fun getCircleArea(): Double {
 
 fun getTriangleArea(): Double {
     print("please enter measurements for the base of the triangle in ft \n")
-    var b = readLine()!!.toInt()
+    var b = readLine()!!.toDouble()
     print("please enter measurements for the height of the triangle in ft \n")
-    var h = readLine()!!.toInt()
+    var h = readLine()!!.toDouble()
     var area = ((1.5)*(b*h))
     return area
 }
 
-fun getRectangleArea(): Int{
+fun getRectangleArea(): Double{
     print("please enter measurements for the base of the rectangle in ft \n")
-    var b = readLine()!!.toInt()
+    var b = readLine()!!.toDouble()
     print("please enter measurements for the height of the rectangle in ft \n")
-    var h = readLine()!!.toInt()
+    var h = readLine()!!.toDouble()
     var area = h * b
     return area
 }
@@ -54,7 +51,7 @@ fun askToExit(): Boolean{
 
 
 fun main() {
-    println(addSomeNumbers(2, 4))
+
     var selectionNum = 0
     var finished = false
     while (finished != true) {
